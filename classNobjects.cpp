@@ -4,6 +4,7 @@ using namespace std;
 
 class Car {
 public: 
+
     string brand;
     string color;
 
