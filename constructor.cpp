@@ -14,7 +14,9 @@ private:
     double salary;
 
 public:
+    
     //constructors are always in public, cause even if we cannot define this ? it automatically calls when a object is created in the main function...
+    //non parameterized constructor
     Teacher(){
         dept = "Computer science";
     }
