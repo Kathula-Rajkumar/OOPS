@@ -20,6 +20,8 @@ public:
     Teacher(){
         dept = "Computer science";
     }
+
+    
     string name;
     string dept;
     string subject;
