@@ -6,13 +6,35 @@
 #include <iostream>
 using namespace std;
 
-class Account{
-private:            //Data hiding
-    double balance;    
-    string password;
+class Student{
+private:
+    string name;
+    int age;
 
 public:
-   string username;
-   string accountId;
+    void setAge(int a){
+        if(a > 0) age = a;
+    }
+
+    int getAge(){
+        return age;
+    }
+
+    void setName(string n){
+        name = n;
+    }
+
+    string getName(){
+        return name;
+    }
 
 };
+
+int main(){
+    Student s1;
+    s1.setName("Rajkumar");
+    s1.setAge(23);
+
+    cout<<"Name: "<<s1.getName() <<" "<<"Age is: "<< s1.getAge() <<endl;
+
+}
